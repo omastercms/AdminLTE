@@ -1,0 +1,29 @@
+{
+  "name": "omastercms/adminlte-theme",
+  "type": "omaster-theme",
+  "description": "An OmasterCMS administration theme",
+  "keywords": [
+    "omaster-cms"
+  ],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Nicolas Widart",
+      "email": "info@omastercms.com",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "php": ">=5.4",
+    "composer/installers": "~1.0"
+  },
+  "scripts": {
+    "post-install-cmd": [
+      "php artisan stylist:publish"
+    ],
+    "post-update-cmd": [
+      "php artisan stylist:publish"
+    ]
+  },
+  "minimum-stability": "dev"
+}
